@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>snake on javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Snake</h1>
+    </header>
+    <main tabindex="-1" id="snake">
+        <nav id="menu">
+            <button id="return">Quit game (Esc)</button>
+            <form id="settings">
+                <label for="size">Grid size</label>
+                <input type="range" id="size" min="10" max="100" value="50">
+                <span id="feedback"></span>
+                <br>
+                <label for="speed">Game speed</label>
+                <input type="range" id="speed" min="1" max="10" value="5">
+                <span id="speedBack"></span>
+                <br>
+                <button type="submit" autofocus> Start!</button>
+            </form>
+            <div id="checkQuit" tabindex="-1">
+                <p>are you sure you want to quit?</p>
+                <button id="yesQuit">Yes</button>
+                <button id="noQuit">No</button>
+            </div>
+            <div id="score">
+                <p>Current score:</p>
+                <p id="current"></p>
+                <p>nex point:</p>
+                <p id="next"></p>
+            </div>
+            <p id="start">Press any arrowbutton to start game</p>
+            <p id="gameFocus">Click to continue</p>
+            <div id="dead">
+                <h1>You died!</h1>
+                <p class="score">
+                    <span>Your score:</span>
+                    <span id="endScore"></span>
+                    <span>Snake length:</span>
+                    <span id="endLength"></span>
+                </p>
+                <div class="buttons">
+                    <button id="restart">New game</button>
+                    <button id="deadReturn">Main menu</button>
+                </div>
+            </div>
+        </nav>
+        <div id="game">
+
+        </div>
+    </main>
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
